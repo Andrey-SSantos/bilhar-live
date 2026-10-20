@@ -1,0 +1,33 @@
+BILHAR LIVE - PACOTE PARA INSTALAR COMO APP (PWA)
+
+O QUE É
+Estes arquivos são a "moldura" do app. Eles abrem o seu jogo (Apps Script) em tela cheia, na horizontal,
+com ícone próprio. O jogo continua no Apps Script: quando você publicar uma Nova versão lá,
+todo mundo recebe a atualização sem reinstalar nada.
+
+ANTES DE TUDO (Apps Script)
+1. Implantar > Gerenciar implantações > editar (lápis) > Quem pode acessar: "Qualquer pessoa" > Nova versão > Implantar.
+   (Se exigir login Google, o jogo pode não carregar dentro do app.)
+2. Confirme que o link /exec está igual ao da linha EXEC_URL do index.html (já deixei o seu).
+
+PUBLICAR NO GITHUB PAGES (grátis)
+1. Crie conta em github.com > botão "New repository" > nome: bilhar-live > Public > Create.
+2. "uploading an existing file" > arraste TODOS os arquivos desta pasta (index.html, manifest.json, sw.js e os 4 .png) > Commit changes.
+3. Settings > Pages > Source: "Deploy from a branch" > Branch: main, pasta / (root) > Save.
+4. Em 1-2 minutos o endereço aparece: https://SEU-USUARIO.github.io/bilhar-live/
+   Esse é o link que você manda para todo mundo.
+
+COMO CADA PESSOA INSTALA
+- Android (Chrome): abre o link > toca em "Instalar" (ou menu ⋮ > Instalar app).
+- iPhone (Safari): abre o link > Compartilhar > Adicionar à Tela de Início.
+- Computador (Chrome/Edge): ícone de instalar na barra de endereço.
+
+CONVITE DE SALA
+Use  https://SEU-USUARIO.github.io/bilhar-live/?sala=ABCD  (troque ABCD pelo código da sala).
+
+OPCIONAL: APK PARA ANDROID
+Com o site no ar, entre em pwabuilder.com, cole o endereço do GitHub Pages > Package for stores > Android > Download.
+O APK gerado pode ser enviado pelo WhatsApp.
+
+SE MUDAR O LINK DO APPS SCRIPT (nova implantação com outro ID)
+Edite só a linha EXEC_URL do index.html no GitHub. Se apenas publicar "Nova versão" na mesma implantação, nada a fazer.
